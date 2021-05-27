@@ -39,6 +39,8 @@ class CalculateView: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let dest = segue.destination as! BmiResultViewController
         dest.bmi = calculateBrain.getBmi()
+        dest.advice = calculateBrain.getAdvice()
+        dest.color = calculateBrain.getColor()
     }
 }
 
